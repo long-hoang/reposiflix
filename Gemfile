@@ -30,11 +30,15 @@ gem 'mini_magick'
 
 gem 'carrierwave-aws'
 
+gem "font-awesome-rails"
+
 gem 'stripe'
 
 gem 'ranked-model'
 
 gem 'jquery-ui-rails'
+
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
