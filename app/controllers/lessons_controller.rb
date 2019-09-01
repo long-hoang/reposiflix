@@ -2,7 +2,7 @@ class LessonsController < ApplicationController
 
   before_action :authenticate_user!
   before_action :require_authorized_for_current_course, only: [:show]
-
+  skip_before_filter :verify_authenticity_token 
 
   def show
   end
