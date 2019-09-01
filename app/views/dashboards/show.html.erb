@@ -1,9 +1,20 @@
 <br />
 
 <div class = "booyah-box col-10 offset-1">
-  <h1 class = "text-center">My Dashboard</h1>
+  <h1 class = "text-center dash-head">My Dashboard</h1>
 
-  <h2 class = "text-center">What Im Learning</h2>
+      <hr class = "col-8 offset-2">
+
+  <br/>
+  <br/>
+
+  <h2 class = "text-center">My Enrollments</h2>
+ 
+  <i class="fa fa-book fa-3x col-10 offset-1 text-center"></i>
+    <br/>
+    <br/>  
+
+
   <% current_user.enrolled_courses.each do |course| %>
     <h3 class = "text-center">
       <%= link_to course.title, course_path(course) %>
@@ -25,8 +36,14 @@
       <br class = "clr" />      
   <% end %>
 
+  <br/>
+
 
   <h2 class = "text-center">What I'm Teaching</h2>
+<i class="fa fa-graduation-cap fa-3x col-10 offset-1 text-center"></i>
+    <br/>
+    <br/>  
+
     <% current_user.courses.each do |course| %>
       <h3 class = "text-center">
         <%= link_to course.title, course_path(course) %>
