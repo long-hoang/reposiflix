@@ -1,6 +1,5 @@
 class LessonsController < ApplicationController
-
-  protect_from_forgery prepend: true, with: :exception
+  skip_before_filter :verify_authenticity_token
   before_action :authenticate_user!
   before_action :require_authorized_for_current_course, only: [:show]
 
