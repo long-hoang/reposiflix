@@ -20,7 +20,7 @@ gem 'jquery-rails'
 
 gem 'simple_form'
 
-gem 'carrierwave','~> 1.2.1'
+gem 'carrierwave','~> 1.3.2'
 
 gem 'figaro'
 
